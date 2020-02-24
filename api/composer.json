@@ -8,6 +8,7 @@
         "doctrine/doctrine-migrations-bundle": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
         "lexik/jwt-authentication-bundle": "^2.6",
+        "symfony/apache-pack": "^1.0",
         "symfony/console": "4.4.*",
         "symfony/dotenv": "4.4.*",
         "symfony/flex": "^1.1",
@@ -54,7 +55,12 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "chmod -R 777 public/",
+            "chmod -R 777 config/",
+            "mkdir -p config/jwt",
+            "openssl genrsa -out config/jwt/private.pem 4096",
+            "openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem"
         ],
         "post-update-cmd": [
             "@auto-scripts"
