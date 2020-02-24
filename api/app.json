@@ -2,8 +2,7 @@
   "success_url": "/",
   "env": {
     "APP_ENV": "prod",
-    "APP_SECRET": {"generator": "secret"},
-    "CORS_ALLOW_ORIGIN": "^https?://localhost(:[0-9]+)?|https://alexandre-mace.github.io/action"
+    "APP_SECRET": {"generator": "secret"}
   },
   "addons": [
     "heroku-postgresql"
