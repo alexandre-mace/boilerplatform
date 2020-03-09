@@ -73,7 +73,7 @@ class Update extends Component {
           {this.props.updated && (
               <div className="row mt-3">
                 <div className="col alert alert-success" role="status">
-                  L'évenement {this.props.updated['@id'].name} a été mis à jour avec succès.
+                  L'événement {this.props.updated['@id'].name} a été mis à jour avec succès.
                 </div>
             </div>
           )}

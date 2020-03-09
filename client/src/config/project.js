@@ -1,8 +1,5 @@
 import styles from '../assets/scss/variables.scss'
 
-// INFRASTRUCTURE
-export const GITHUB_REPOSITORY_NAME = "GITHUB_REPOSITORY_NAME";
-
 // PROJECT DESCRIPTION
 export const PROJECT_NAME = "PROJECT_NAME";
 export const PROJECT_DESCRIPTION = PROJECT_NAME + " est une plateforme qui regroupe les événements en faveur de l'environnement";
